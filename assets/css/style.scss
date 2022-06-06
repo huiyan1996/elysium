@@ -1,0 +1,199 @@
+$themeLight: #72c7b7;
+$themeMiddle: #112639;
+$themeDark: #17152a;
+$gold: #fcd05d;
+$cardDarkBlue: #100e23;
+$black: #000;
+
+@font-face {
+    font-family: themeFont;
+    src: url(SpaceMono-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: themeFont;
+    src: url(SpaceMono-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: themeFont;
+    src: url(SpaceMono-Italic.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: themeFont;
+    src: url(SpaceMono-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: bannerFont;
+    src: url(Vidaloka-Regular.ttf);
+}
+
+video {
+    outline: none;
+}
+
+body {
+    background-color: $themeDark;
+    font-family: themeFont;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.font2 {
+    font-family: bannerFont;
+}
+
+.color-light {
+    color: $themeLight;
+}
+
+.color-middle {
+    color: $themeMiddle;
+}
+
+.color-dark {
+    color: $themeDark;
+}
+
+.bg-black {
+    background-color: $black;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.btn {
+    outline: none;
+
+    &.btn-primary {
+        border-color: $themeLight;
+        background-color: transparent;
+
+        &:hover {
+            background-color: $themeLight;
+            color: $black;
+        }
+    }
+
+    &.btn-default {
+        border-color: $themeLight;
+        background-color: $themeLight;
+        color: $black;
+
+        &:hover {
+            background-color: transparent;
+            color: #fff;
+        }
+    }
+}
+
+.bannerWrapper {
+    position: relative;
+
+    .bannerContent {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        background-color: rgba(0,0,0,.3);
+
+        .bannerText {
+            h1 {
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+.passWrapper {
+    background-color: $themeMiddle;
+    color: #fff;
+}
+
+.roadmapWrapper {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -1px;
+        width: 2px;
+        height: 100%;
+        background: $themeMiddle;
+        z-index: 1
+     }
+}
+
+.roadmapBlock {
+    width: -webkit-calc(50% + 8px);
+    width: -moz-calc(50% + 8px);
+    width: calc(50% + 8px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    clear: both;
+    color: #fff;
+    align-items: center;
+
+    &:nth-of-type(odd) {
+        align-self: flex-start;
+        flex-flow: row-reverse;
+        // float: left;
+    }
+
+    &:nth-of-type(even) {
+        align-self: flex-end;
+        // float: right;
+    }
+
+    .roadmap-content {
+        width: 95%;
+        border: 1px solid $themeLight;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px -5px $themeLight;
+
+        .title {
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .content {
+            font-weight: normal;
+            font-size: 19px;
+        }
+    }
+}
+
+.marker {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid $themeMiddle;
+    background: $themeLight;
+    margin-top: 10px;
+    z-index: 9999
+ }

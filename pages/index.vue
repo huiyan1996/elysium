@@ -6,6 +6,14 @@
         <Video />
         <PassDesign />
         <RoadMap />
+        <TokenDistribution />
+        <Faq />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 footer text-center">
+        PlayOS {{new Date().getFullYear()}} &copy; All rights reserved.
       </div>
     </div>
   </div>

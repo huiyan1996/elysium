@@ -1,6 +1,6 @@
 <template>
   <div class="bannerWrapper">
-    <img src="~/assets/img/bg.jpg" width="100%" alt="">
+    <img src="~/assets/img/bg.jpg" class="bannerImg" width="100%" alt="">
     <div class="bannerContent">
       <div class="container logoWrapper">
         <img src="~/assets/img/logo.png" alt="" class="logo">

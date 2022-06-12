@@ -5,7 +5,7 @@
         </h1>
 
         <div class="container">
-            <div class="row justify-content-center">
+            <!-- <div class="row justify-content-center">
                 <div class="col-md-8">
                     <svg viewBox="0 0 64 64" class="pie">
                         <svg style="font-size: 2px;">
@@ -28,12 +28,11 @@
                             </circle>
                             <text x="45%" y="30%" width="10px">Aub (52%)</text>
                         </svg>
-                        <!-- <circle r="25%" cx="50%" cy="50%" style="stroke-dasharray: 0 100; stroke: red; stroke-dashoffset: -52; animation-delay: 1s">
-                        </circle> -->
                     </svg>
                 </div>
-            </div>
-            <div class="row justify-content-center mt-3">
+            </div> -->
+            <div id="chartdiv"></div>
+            <!-- <div class="row justify-content-center mt-3">
                 <div class="col-md-8">
                     <ul class="graphItem text-white">
                         <li>Dev (6.75%)</li>
@@ -42,7 +41,7 @@
                         <li>Aub (52%)</li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </template>
@@ -54,7 +53,37 @@ export default {
   component: {
   },
   data() {
-      return {}
+      return {
+        chartData: [
+            {display: "Dev", percentage: 6.75},
+            {display: "Team", percentage: 15},
+            {display: "Marketing & Collaboration", percentage: 26.25},
+            {display: "Hub", percentage: 52},
+        ],
+      }
+  },
+  mounted() {
+    let {am4core, am4charts, am4themes_animated, am4themes_dark} = this.$am4core();
+    let chart = am4core.create("chartdiv", am4charts.PieChart);
+
+    chart.data = this.chartData
+    chart.responsive.enabled = true;
+
+    let pieSeries = chart.series.push(new am4charts.PieSeries());
+    pieSeries.dataFields.value = "percentage";
+    pieSeries.dataFields.category = "display";
+    pieSeries.labels.template.text = "{display}: {percentage}%";
+    pieSeries.slices.template.tooltipText = "{display}: {percentage}%";
+    pieSeries.labels.template.fill = am4core.color("white");
+    pieSeries.slices.template.stroke = am4core.color("#72c7b7");
+    // pieSeries.alignLabels = false;
+    pieSeries.alignLabels = false;
+    // pieSeries.labels.template.fill = am4core.color("white");
+
+    chart.innerRadius = am4core.percent(40);
+    chart.legend = new am4charts.Legend();
+    chart.legend.labels.template.fill = am4core.color("#fff");
+    chart.legend.valueLabels.template.fill = am4core.color("#fff"); 
   },
 }
 </script>
@@ -70,5 +99,9 @@ export default {
   stroke: gold;
   stroke-width: 32;
   animation: rotate 1.5s ease-in;
-}    
+}   
+
+#chartdiv {
+    height: 500px;
+}
 </style>

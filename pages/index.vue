@@ -9,6 +9,10 @@
         <Hub />
         <TokenDistribution />
         <Faq />
+
+        <a href="#" class="backToTop">
+          <b-icon icon="chevron-up" />
+        </a>
       </div>
     </div>
 

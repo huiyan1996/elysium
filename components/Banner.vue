@@ -5,21 +5,21 @@
       <div class="container logoWrapper">
         <img src="~/assets/img/logo.png" alt="" class="logo">
 
-        <!-- <div class="menu">
+        <div class="menu">
           <a href="#pass">PREMINT Collector Pass</a>
           <a href="#roadmap">Roadmap</a>
           <a href="#hub">Our Hub</a>
           <a href="#faq">FAQ</a>
-        </div> -->
+        </div>
       </div>
       <div class="text-white text-center font2 bannerText">
         <h1>The underbelly of Web3.</h1>
         <h1>A shadow vague, formless, but eternal.</h1>
       </div>
       <div class="my-5 text-center">
-        <button class="btn btn-primary btn-lg">
+        <a href="#pass" class="btn btn-primary btn-lg">
           Reveal Portal
-        </button>
+        </a>
       </div>
     </div>
   </div>

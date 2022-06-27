@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="roadmap">
         <h1 class="text-center text-white mt-4 mb-3">
             <b>Roadmap</b>
         </h1>
@@ -7,8 +7,15 @@
             <div class="roadmapBlock">
                 <div class="marker"></div>
                 <div class="roadmap-content">
-                    <div class="title">Phase 1</div>
-                    <div class="content">Adventure Island Free Airdrop </div>
+                    <div class="d-flex">
+                        <div class="mr-3">
+                            <img src="~/assets/img/adventurelanddark.jpg" class="rounded" alt="" width="130px">
+                        </div>
+                        <div>
+                            <div class="title">Phase 1</div>
+                            <div class="content">Adventure Island Free Airdrop </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 

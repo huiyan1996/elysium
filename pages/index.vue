@@ -6,6 +6,7 @@
         <Video />
         <PassDesign />
         <RoadMap />
+        <Hub />
         <TokenDistribution />
         <Faq />
       </div>

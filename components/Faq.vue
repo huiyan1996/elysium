@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-5">
+  <div class="container mt-5" id="faq">
       <h1 class="text-center text-white"><b>FAQ</b></h1>
 
       <div class="accordionWrapper" v-for="(v, k) in displayList" :key="k">
@@ -34,14 +34,14 @@ export default {
               },
               {
                   title: "How many PLAYOS Space Genesis will be available?",
-                  content: "Limited 555 Piece only",
+                  content: "Limited 333 Piece only",
                   isShow: false,
               },
-              {
-                  title: "What is the mint date and price?  ",
-                  content: "Our mint date will be at 10 Jun 2022 with mint price of 0.4 ETH",
-                  isShow: false,
-              },
+            //   {
+            //       title: "What is the mint date and price?  ",
+            //       content: "Our mint date will be at 10 Jun 2022 with mint price of 0.4 ETH",
+            //       isShow: false,
+            //   },
               {
                   title: "Where can I mint a PLAYOS Space Genesis ?  ",
                   content: "Every WL will be able to mint a Genesis from our website that will be released when the mint phase begins. The details will be on our Twitter.",

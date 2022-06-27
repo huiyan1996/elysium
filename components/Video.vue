@@ -1,10 +1,18 @@
 <template>
   <div class="videoWrapper py-5">
-        <div class="text-center px-3 cursor-pointer" @click="videoModal=!videoModal">
-            <img src="~/assets/img/playButton.png" class="img-fluid" alt="">
-        </div>
 
-        <b-modal 
+        <div class="d-flex justify-content-center">
+            <video width="800px" controls class="img-fluid">
+                <source src="https://elui.mlitteam.co/assets/playos.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+
+        <!-- <div class="text-center px-3 cursor-pointer" @click="videoModal=!videoModal">
+            <img class="thumbNail img-fluid" src="~/assets/img/passThumb.png" alt="" width="500px">
+        </div> -->
+
+        <!-- <b-modal 
             v-model="videoModal" 
             size="xl" 
             hide-footer 
@@ -18,9 +26,9 @@
                 </button>
             </div>
             <video width="100%" controls>
-                <source src="~/assets/img/video.mp4" type="video/mp4">
+                <source src="https://elui.mlitteam.co/assets/playos.mp4" type="video/mp4">
             </video>
-        </b-modal>
+        </b-modal> -->
   </div>
 </template>
 

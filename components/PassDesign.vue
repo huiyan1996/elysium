@@ -5,7 +5,7 @@
             <div class="col-md-6 py-md-5 py-2">
                 <img src="~/assets/img/passDesign.png" class="img-fluid" alt="">
             </div>
-            <div class="col-md-6 py-md-5 py-2">
+            <div class="col-md-6 py-md-5 py-2" id="pass">
                 <h2 class="font2"><span class="text-upper">Premint</span> Collector Pass</h2>
                 <p>Be one of 10,000 people to get access to the collector side of web3's most popular access list platform. See below for holder benefits, roadmap and mint schedule.</p>
 
@@ -37,8 +37,8 @@ export default {
   data() {
       return {
           progress: {
-              value: 10000,
-              max: 10000,
+              value: 333,
+              max: 333,
           }
       }
   },

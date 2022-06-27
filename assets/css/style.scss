@@ -7,32 +7,36 @@ $black: #000;
 
 @font-face {
     font-family: themeFont;
-    src: url(SpaceMono-Regular.ttf);
+    src: url(KdamThmorPro-Regular.ttf);
     font-weight: normal;
 }
 
-@font-face {
-    font-family: themeFont;
-    src: url(SpaceMono-Bold.ttf);
-    font-weight: bold;
-}
+// @font-face {
+//     font-family: themeFont;
+//     src: url(SpaceMono-Bold.ttf);
+//     font-weight: bold;
+// }
 
-@font-face {
-    font-family: themeFont;
-    src: url(SpaceMono-Italic.ttf);
-    font-style: italic;
-}
+// @font-face {
+//     font-family: themeFont;
+//     src: url(SpaceMono-Italic.ttf);
+//     font-style: italic;
+// }
 
-@font-face {
-    font-family: themeFont;
-    src: url(SpaceMono-BoldItalic.ttf);
-    font-weight: bold;
-    font-style: italic;
-}
+// @font-face {
+//     font-family: themeFont;
+//     src: url(SpaceMono-BoldItalic.ttf);
+//     font-weight: bold;
+//     font-style: italic;
+// }
 
 @font-face {
     font-family: bannerFont;
-    src: url(Vidaloka-Regular.ttf);
+    src: url(KdamThmorPro-Regular.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 video {
@@ -123,6 +127,11 @@ body {
     }
 }
 
+.bannerImg {
+    max-height: 100vh;
+    object-fit: cover;
+}
+
 .passWrapper {
     background-color: $themeMiddle;
     color: #fff;
@@ -190,6 +199,12 @@ body {
             font-size: 19px;
         }
     }
+}
+
+.hubBg {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #1e3b55;
 }
 
 .marker {

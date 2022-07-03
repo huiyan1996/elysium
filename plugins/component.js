@@ -16,6 +16,9 @@ import * as am4charts from "@amcharts/amcharts4/charts";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 import am4themes_dark from "@amcharts/amcharts4/themes/dark";
 import Vue from "vue";
+import Carousel3d from 'vue-carousel-3d';
+
+Vue.use(Carousel3d);
 Vue.prototype.$am4core = () => {
  return {
   am4core,

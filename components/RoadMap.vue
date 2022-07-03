@@ -71,7 +71,9 @@
                 <div class="marker"></div>
                 <div class="roadmap-content">
                     <div class="title">Phase 8</div>
-                    <div class="content">Blur Metaverse Image</div>
+                    <div class="content">
+                        <img src="~/assets/img/metaverse.jpg" width="100%" alt="">
+                    </div>
                 </div>
             </div>
         </div>

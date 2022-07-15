@@ -137,6 +137,10 @@ body {
     justify-content: space-between;
     align-items: center;
 
+    .logo {
+        width: 300px;
+    }
+
     .menu {
         background-color: rgba(0,0,0,.2);
         border-radius: 7px;
@@ -201,7 +205,7 @@ body {
 
     .roadmap-content {
         width: 95%;
-        border: 1px solid $themeLight;
+        border: 2px dashed $themeLight;
         padding: 15px;
         border-radius: 10px;
         box-shadow: 0 0 15px -5px $themeLight;

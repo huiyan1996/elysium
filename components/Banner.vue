@@ -3,7 +3,7 @@
     <img src="~/assets/img/bg.jpg" class="bannerImg" width="100%" alt="">
     <div class="bannerContent">
       <div class="container logoWrapper">
-        <img src="~/assets/img/logo.png" alt="" class="logo">
+        <img src="~/assets/img/Playos-Logo-White.png" alt="" class="logo">
 
         <div class="menu">
           <a href="#pass">PREMINT Collector Pass</a>
